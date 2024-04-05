@@ -26,6 +26,10 @@ public class task2_StudentGradeCalc {
         for(int i=0;i<s;i++){
             System.out.print("Enter Sub-"+(i+1)+" Marks(out of 100):");
             subjects[i]=sc.nextDouble();
+            if(subjects[i]>100){
+                System.out.println("Please enter valid marks.");
+                return;
+            }
         }
 
         for(int i=0;i<subjects.length;i++){
